@@ -1,0 +1,17 @@
+.box{width:1349px;height:588px;background:gray;overflow:hidden;}
+.bgBox{width:800px;height:560px;margin:10px;border-radius:20px;background-image:url(../images/reg_bg.png);margin:10px auto;}
+.reg_form{width:800px;height:560px;//margin:10px auto;background:#fff;border-radius:20px;box-shadow:4px 4px 5px green;text-align:center;position:relative;opacity:0.6;}
+.form-table{width:90%;height:470px;//border:1px solid red;margin:10px auto;text-align:center;}
+.form-table td{border-bottom:1px dashed red;}
+.form-table .span1{color:red;font-size:20px;margin:0 auto;display:block;width:18px;height:18px;}
+.form-table .td1{width:70px;height:60px;font-size:18px;font-weight:bold;margin-left:20px;}
+.form-table .td2{width:250px;height:60px;}
+.td2 input{width:90%;height:40px;border-radius:8px;border:1px solid gray;padding:10px;}
+.form-table .uploadBtn{width:80px;height:50px;//border:1px solid blue;overflow:hidden;position:relative;line-height:40px;text-align:center;}
+.form-table .uploadBtn input{width:80px;height:50px;cursor:pointer;position:absolute;top:0;left:0;opacity:0;}
+.showMes{width:20px;height:40px;//background-color:white;display:inline-block;line-height:60px;margin:1px;}
+.showImg{width:16px;height:16px;//border:1px solid red;margin-top:15px;display:block;float:left;display:none;}
+.errorMes{display:block;width:150px;height:25px;border:1px solid red;float:right;margin-top:10px;}
+.divMes{width:350px;}
+.divMes div{color:red;display:none;}
+.divMes .showTX{display:block;}

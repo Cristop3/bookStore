@@ -1,0 +1,8 @@
+.head{width:1194px;height:60px;background-color:gray;margin:0 auto;text-align:center;line-height:60px;}
+.head span{font-size:28px;color:yellow;}
+.box{width:1194px;height:auto;//border:1px solid blue;margin:0 auto;}
+[class*="col-"]{padding-top:15px;padding-bottom:15px;background-color:#eee;border:1px solid #ddd;background-color:rgba(86,61,124,.15);border:1px solid rgba(86,61,124,.2);text-align:center;}
+td,th{text-align:center;vertical-align:middle;position:relative;}
+td span{line-height:100px;}
+//.checkbox{position:absolute;top:42%;left:45%;}
+.checkbox{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}

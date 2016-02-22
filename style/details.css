@@ -1,0 +1,48 @@
+.box{width:1194px;height:550px;//border:1px solid blue;margin:0 auto;overflow:hidden;background-color:white;}
+.details{width:990px;height:550px;//background-color:white;overflow:hidden;//background-image:url(../images/detail_bg.png);//opacity:0.8;//border:1px solid gray;float:left;}
+.details_left{width:550px;height:550px;//border:1px solid red;margin-top:10px;float:left;}
+.details_right{height:550px;width:430px;//border:1px solid green;margin-top:10px;float:right;}
+.details_left .left_bigImg{width:420px;height:420px;//border:1px solid black;margin:0 auto;position:relative;}
+.details_left .left_smlImg{width:450px;height:120px;border:1px solid gray;margin:0 auto;}
+.left_smlImg ul{width:450px;height:120px;position:relative;padding-top:20px;}
+.left_smlImg ul li{width:80px;height:80px;float:left;margin-left:10px;overflow:hidden;}
+.left_smlImg ul li img{width:76px;height:76px;}
+.left_smlImg ul li img:hover{padding:2px;background:green;cursor:pointer;}
+.active{background:black;padding:2px;}
+/*放大镜*/ 
+div.zoomdiv{z-index:999;position:absolute;width:400px;height:400px;background:#ffffff;border:1px solid #ccc;display:none;text-align:center;overflow:hidden;}
+/*图片上的覆盖罩*/
+div.jqZoomPup{z-index:999;visibility:hidden;position:absolute;top:0;left:0;width:50px;height:50px;border:1px solid #aaa;background:#ffffff url(../images/details/zoomlens.gif) no-repeat 50% top;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(opacity:50);}
+.right_inner{width:380px;height:500px;//border:1px solid white;margin:0 auto;overflow:hidden}
+
+.bookName{width:350px;height:50px;//border:1px solid blue;margin-top:10px;font-size:20px;font-weight:bold;line-height:50px;color:yellow;background-color:#b5c3cf;}
+.bookAbstract{width:350px;height:150px;background-color:#bdd3e5;//border:1px solid blue;font-size:15px;font-weight:bold;}
+.cart{width:350px;height:100px;margin:10px auto;//border:1px solid red;padding:25px;}
+.detls p span{font-weight:bold;}
+
+.scrollImg{width:180px;height:500px;//background:red;float:right;//margin-top:20px;position:relative;}
+#scrollUl{position:absolute;top:0px;margin:0;padding:0;//border:1px solid black;}
+#scrollUl li{width:180px;height:100px;margin-bottom:10px;//background:gray;}
+#scrollUl li img{width:100%;height:100%;}
+
+/*购物车*/
+.outCar{width:250px;height:100%;position:fixed;top:0;right:-200px;//border:1px solid black;//padding:1px;}
+.cartBar{width:50px;height:100%;background-color:#f43b48;float:left;}
+.detailCar{float:left;background-color:#f95820;height:100%;width:200px;position:relative;}
+.cartOne{width:100%;//height:100px;background-color:#d6c9ca;margin:240px 0 0 0;}
+.cartOne dl{width:30px;height:30px;background-image:url(../images/cart.png);margin:0 auto;//border:1px solid blue;cursor:pointer;}
+.cartOne a{display:block;width:20px;margin:0 auto;//border:1px solid blue;font-weight:bold;text-align:center;color:black;}
+.cartOne a:hover{background-color:green;color:white;}
+    /*加入购物车后提示信息*/
+}
+#msg{position:fixed; top:300px; right:35px; z-index:10000; width:1px; height:52px; line-height:52px; font-size:20px; text-align:center; color:#fff; background:#360; display:none}
+    /*加入途中的空中图片*/ 
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;} 
+
+/*小购物车详情*/
+.pHead{margin:0 auto; font-size:20px;width:100px;color:white;}
+.smlCar{width:200px;height:100px;background-color:#89bce5;overflow:hidden;position:relative;margin-bottom:5px;}
+.carImg{width:80px;height:80px;float:left;margin-top:10px;//background-color:red;}
+.carImg img{width:100%;height:100%;}
+.right_car{width:120px;height:80px;//background-color:yellow;float:left;margin-top:10px;padding:10px;}
+.goCar{position:absolute;bottom:5px;left:45px;}

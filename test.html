@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type='text/javascript' src='script/jquery-1.11.3.min.js'></script>
+        <script>
+            $(function(){
+                $.ajax({
+                    type:'post',
+                    url:'addAjax.php',
+                    dataType:"json",
+                    success:function(json){
+                       var bookName;
+                       var bookPrice;
+                       var bookPic;
+
+                        $.each(json,function(attr,value){
+                             //alert(attr);
+                             //alert(json[attr]);
+                             //alert(value);
+                             if(attr=="bookPic"){
+                                bookPic = "admin/uploads/"+value;
+                             }else if(attr=="bookName"){
+                                bookName = value;
+                             }else{
+                                bookPrice = value;
+                             }
+                        });
+
+                    //alert($("#ul li").length);
+                    
+                    /*$("#ul").append('<li><a href="#"><img src="'+bookPic+'" height="200" width="200"/></a><a href="#"><span class="showBook_span1">'+bookName+'</span></a><span class="showBook_span2">价格￥'+bookPrice+'.00</span></li>');*/
+                      
+                    $('<li><a href="#"><img src="'+bookPic+'" height="200" width="200"/></a><a href="#"><span class="showBook_span1">'+bookName+'</span></a><span class="showBook_span2">价格￥'+bookPrice+'.00</span></li>').appendTo($("#ul")).hover(function(){
+                        $(this).addClass('active');
+                    },function(){
+                        $(this).removeClass('active');
+                    }); 
+                       
+                      
+                    }
+                });
+                /*var json = {"width":"200px","height":"200px"};
+                //alert(json.width);
+                $.each( [0,1,2], function(i, n){
+                    alert( "Item #" + i + ": " + n );
+                });*/
+            });
+        </script>
+        <style>
+            .showBook{width:1200px;border:1px solid yellow;height:auto;overflow:hidden;}
+            .showBook ul{width:1200px;height:auto;overflow:hidden;}
+            .showBook li{width:200px;height:250px;//background-color:white;float:left;margin-left:30px;padding:2px;//border:1px solid blue;overflow:hidden;}
+            .showBook_span1{display:inline-block;width:100%;height:25px;}
+            .showBooke_span2{display:inline-block;width:100%;height:25px;}
+            .active{border:1px solid blue;}
+        </style>
+    </head>
+    <body>
+        <div class='showBook' id='autoBook'>
+        <ul id='ul'>
+            <!--<li>
+                <a href='#'><img src='images/book5.png' height="200" width="200"></a>
+                <span class='showBook_span1'><a href='#'>大圣归来之猴王的故事</a></span>
+                <span class='showBook_span2'>价格:￥57.00</span>
+            </li>
+            <li>
+                <a href='#'><img src='images/book5.png' height="200" width="200"></a>
+                <span class='showBook_span1'><a href='#'>大圣归来之猴王的故事</a></span>
+                <span class='showBook_span2'>价格:￥57.00</span>
+            </li>-->
+        </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+//html,body,ul,h1,h2,h3,hr,p{margin:0px;padding:0px;}
+li{list-style:none;}
+a{text-decoration:none;}
+img{border-style:none;}
+.clearFloat{clear:both;}
+body{background-color:#d2dee8;}

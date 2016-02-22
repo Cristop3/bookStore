@@ -1,0 +1,13 @@
+.box{width:1349px;height:588px;background:#fff;overflow:hidden;}
+.login_head{width:1190px;height:88px;background:#337ab7;margin:auto;padding:22px 0px;}
+.loginA{display:block;width:290px;height:28px;font-size:28px;color:yellow;margin-left:50px;}
+.login_cont{width:100%;postion:relative;}
+.login_cont .inner{width:1190px;margin:auto;}
+.login_form{width:350px;height:400px;position:absolute;top:91px;right:180px;//background:#fff;padding:2px;overflow:hidden;}
+.login_form .loginPanel{margin-top:50px;}
+.login_form .tbUser{width:36px;height:42px;font-size:25px;//border:1px solid blue;text-align:center;padding-top:5px;background:#d8dadc;border-radius:5px}
+.login_form .inpUser{margin-bottom: 7px;}
+.login_form .btnSub{width:280px;height:42px;font-size:20px;}
+.login_form .contA{width:280px;height:14px;//border:1px solid blue;}
+.login_form .contA a:nth-of-type(1){float:left;}
+.login_form .contA a:nth-of-type(2){float:right;}
